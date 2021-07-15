@@ -46,6 +46,40 @@ React.js*
 
 *Provides multiple user stories that use ‘persona, what and why’ that outline  meaningful features of project. Shows evidence of user story revision  and refinement.*
 
+#### Sign Up and Sign In
+As a **User** I want to **Sign up for an account** so that **my lists and watched titles are saved**
+
+As a **User** I want to **Sign in ** so that **I can create, modify and delete my watch lists and watched titles**
+
+
+#### Search
+
+As a **User** I want to **search for movies, tv show names and people** so that **I can select certain results and add them to a list**
+
+As a **User** I want to **click on search results** so that **I can read more information such as synopsis, rating and people**
+
+#### Lists
+
+create lists
+
+view lists
+
+add a list so I can mark off what I've completed
+
+modify lists
+
+delete lists
+
+share lists
+
+#### Sprinkles
+
+As a **User** I want to **edit my profile details** so that **I can keep my password secure and my email address and other details up to date**
+
+As a **User** I want to **delete my account** so that **I can leave the service and my data is removed**
+
+As a **User** I want to **add my friends** so that **I can follow what they are watching and they can follow what I'm watching**
+
 ### Wireframes
 
 #### Wireframes for multiple standard screen sizes, created using industry standard software
