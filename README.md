@@ -60,17 +60,21 @@ As a **User** I want to **click on search results** so that **I can read more in
 
 #### Lists
 
-create lists
+As a **User** I want to **create named lists** so that **I can curate titles based on attributes like actors, genres, rating, director etc**
 
-view lists
+As a **User** I want to **add a description to my lists** so that **there is information on the idea behind the list**
 
-add a list so I can mark off what I've completed
+As a **User** I want to **share lists I have created** so that **other users can find inspiration on what to watch**
 
-modify lists
+As a **User** I want to **search lists created on the platform** so that **I can find results relevant to my interests**
 
-delete lists
+As a **User** I want to **follow lists shared by other users** so that **I can find inspiration for what to watch next and track my progress**
 
-share lists
+As a **User** I want to **view my created and followed lists** so that **I can see what I have made and am interested in following**
+
+As a **User** I want to **modify lists I have created and shared** so that **I can improve them**
+
+As a **User** I want to **delete lists I have created and shared** so that **I can remove lists created in error or I no longer want to display**
 
 #### Profile
 
@@ -91,6 +95,8 @@ As a **User** I want to **delete my account** so that **I can leave the service 
 As a **User** I want to **add my friends** so that **I can follow what they are watching and they can follow what I'm watching**
 
 As a **User** I want **movies I have watched to be automatically check off new lists** so that **I don't have to do it manually**
+
+As a **User** I want **the most popular lists a title is included in to appear in the entry** so that **I can choose lists based on my film/tv interests**
 
 ### Wireframes
 
