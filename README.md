@@ -54,7 +54,7 @@ As a **User** I want to **Sign in ** so that **I can create, modify and delete m
 
 #### Search
 
-As a **User** I want to **search for movies, tv show names and people** so that **I can select certain results and add them to a list**
+As a **User** I want to **search for movies, tv show names and people** so that **I can select certain results and add them to a list or mark them as watched**
 
 As a **User** I want to **click on search results** so that **I can read more information such as synopsis, rating and people**
 
@@ -72,13 +72,25 @@ delete lists
 
 share lists
 
+#### Profile
+
+As a **User** I want to **add lists to my profile** so that **I can track and share my progress in a category**
+
+As a **User** I want **my watched movies to appear in my profile** so that **I can see and share my progress**
+
+As a **User** I want to **remove started lists from my profile** so that **my profile is letter cluttered and more relevant as my interests change**
+
 #### Sprinkles
 
 As a **User** I want to **edit my profile details** so that **I can keep my password secure and my email address and other details up to date**
 
+As a **User** I want to **add/update my profile image** so that **My profile can be more personalised and show some of my personality**
+
 As a **User** I want to **delete my account** so that **I can leave the service and my data is removed**
 
 As a **User** I want to **add my friends** so that **I can follow what they are watching and they can follow what I'm watching**
+
+As a **User** I want **movies I have watched to be automatically check off new lists** so that **I don't have to do it manually**
 
 ### Wireframes
 
