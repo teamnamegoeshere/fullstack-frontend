@@ -123,3 +123,28 @@ This list contains user stories from each of the Epics above that are not requir
 
 Trello Board: https://trello.com/b/DPS3LJow/full-stack-app
 
+For this project the team made use of Trello for project management. User stories and tasks were converted into cards and given due dates and appropriate labels according to category, priority and estimated time to completion.
+
+![trello labels list](docs/trello/trello-labels-list.png)
+
+![trello labels example](docs/trello/trello-labels-example.png)
+
+Cards were then discussed with the group and assigned to team members to lead and complete. The cards then moved from left to right between lists depending on their current state. "To do", "In Progress", "Review/Testing" and "Complete".
+
+Day 1:
+
+![trello day 1](docs/trello/trello-day-1.png)
+
+Day 5:
+
+![trello day 5](docs/trello/trello-day-5.png)
+
+Day 10:
+
+![trello day 10](docs/trello/trello-day-10.png)
+
+Once User Stories were finalised by the team, they were added to Trello with corresponding labels and due dates:
+
+![trello-day-10-after-user-stories](docs/trello/trello-day-10-after-user-stories.png)
+
+Tasks
