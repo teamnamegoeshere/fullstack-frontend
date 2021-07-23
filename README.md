@@ -1,7 +1,7 @@
 # Project Name
-
+Popcorn Bucket List
 ## Group Name
-
+Team Name Goes Here
 ### Description
 
 *Produce a working application that meets client and user needs*
@@ -49,19 +49,10 @@ Testing
 
 
 ### Dataflow Diagram
-*Provides dataflow diagram(s) that strictly follow the standard conventions to clearly identify the processes within your application. Clearly depicts where data is coming from, where it is going and how it is being stored.*
-
-*Separates the program into modules that each deal with one particular focus, or concern*
-
-*Demonstrates DRY (Don’t Repeat Yourself) coding principles*
-
-*Uses appropriate data structures*
-
-*Demonstrates good code flow control for user stories*
+![Data Flow Diagram](docs/data-flow-diagram/data-flow-diagram.png)
 
 ### Application Architecture Diagram
-
-*Shows almost flawless understanding of the high level structure of the app*
+![Application Architecture Diagram](docs/application-architecture-diagram/application-architecture-diagram.jpg)
 
 ### User Stories
 
