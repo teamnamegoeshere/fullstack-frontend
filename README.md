@@ -1,16 +1,10 @@
-# Project Name
-Popcorn Bucket List
-## Group Name
-Team Name Goes Here
-### Description
-
-*Produce a working application that meets client and user needs*
-
-##### A link (URL) to your deployed website
-
-##### A link to your GitHub repository (repo) Frontend and Backend
+# Popcorn Bucket List
+## Team Name Goes Here
+Deployed Site: https://popcornbucketlist.com/
 
 Frontend Repository: https://github.com/teamnamegoeshere/fullstack-frontend
+
+Backend Repository: https://github.com/teamnamegoeshere/fullstack-backend
 
 #### Purpose/ Conceptulisation
 Popcorn Bucket List was initially derived from the Movie Scratch Off Posters and evolved into a multifaceted application. Notably entertainment consumption synonymous in todays culture. Hence Popcorn Bucket List tackles the chronic problem of the paradox of choice whereby essentially choice is conducive to paralysis rather than liberation as there are so many streaming services each with their own content libraries. Such browsing and information overload, is highlighted by threads on Reddit like “Anybody else really struggle with deciding on a movie to watch?” And the science of indecision; the notion that were you to calculate the amount of time you spend searching/deciding what to watch. 
@@ -56,14 +50,10 @@ Testing
 
 ### User Stories
 
-#### Provide UX/UI design documentation(user stories) that adequately show Agile methodology implementation.
-
-*Provides multiple user stories that use ‘persona, what and why’ that outline  meaningful features of project. Shows evidence of user story revision  and refinement.*
-
 #### Epic: Sign Up and Sign In
 - As a **User** I want to **Sign up for an account** so that **my lists and watched titles are saved**
 
-- As a **User** I want to **Sign in ** so that **I can create, modify and delete my watch lists and watched titles**
+- As a **User** I want to **Sign in** so that **I can create, modify and delete my watch lists and watched titles**
 
 
 #### Epic: Search
@@ -127,17 +117,8 @@ This list contains user stories from each of the Epics above that are not requir
 *Produce an application with an intuitive user interface, with no impediments to user flow*
 
 ### Trello Screenshots
-#### Screenshots of your Trello board throughout the duration of the project
 
-#### Select and follow a commonly used planning methodology, such as Kanban, Trello, Jira, or Asana.
-
-*Simple and clear standards for planning methodology chosen and adhered to*
-
-*Excellent use of task delegation with Kanban board of tickets assigned to team  members labelled with difficulty level and corresponding Git commits, with consideration of the strength and weaknesses of team members and project/team conditions*
-
-Trello Board: https://trello.com/b/DPS3LJow/full-stack-app
-
-For this project the team made use of Trello for project management. Tasks were converted into cards and given due dates and appropriate labels according to category, priority and estimated time to completion.
+For this project the team made use of Trello for project management. The board can be found here: https://trello.com/b/DPS3LJow/full-stack-app Tasks were converted into cards and given due dates and appropriate labels according to category, priority and estimated time to completion.
 
 ![trello labels list](docs/trello/trello-labels-list.png)
 
