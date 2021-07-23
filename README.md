@@ -1,18 +1,15 @@
-# Project Name
-Popcorn Bucket List
-## Group Name
-Team Name Goes Here
-### Description
-
-*Produce a working application that meets client and user needs*
-
-##### A link (URL) to your deployed website
-
-##### A link to your GitHub repository (repo) Frontend and Backend
+# Popcorn Bucket List
+## Team Name Goes Here
+Deployed Site: https://popcornbucketlist.com/
 
 Frontend Repository: https://github.com/teamnamegoeshere/fullstack-frontend
 
-#### Purpose/ Conceptulisation
+Backend Repository: https://github.com/teamnamegoeshere/fullstack-backend
+
+### Description
+
+#### Purpose/ Conceptualisation
+
 Popcorn Bucket List was initially derived from the Movie Scratch Off Posters and evolved into a multifaceted application. Notably entertainment consumption synonymous in todays culture. Hence Popcorn Bucket List tackles the chronic problem of the paradox of choice whereby essentially choice is conducive to paralysis rather than liberation as there are so many streaming services each with their own content libraries. Such browsing and information overload, is highlighted by threads on Reddit like “Anybody else really struggle with deciding on a movie to watch?” And the science of indecision; the notion that were you to calculate the amount of time you spend searching/deciding what to watch. 
 
 #### Functionality and Features
@@ -30,7 +27,7 @@ Popcorn Bucket List is a computer, tablet and mobile friendly companion for anyo
 Front End
 * HTML
 * CSS
-* Javascript
+* JavaScript
 * React
 
 Back End
@@ -56,14 +53,10 @@ Testing
 
 ### User Stories
 
-#### Provide UX/UI design documentation(user stories) that adequately show Agile methodology implementation.
-
-*Provides multiple user stories that use ‘persona, what and why’ that outline  meaningful features of project. Shows evidence of user story revision  and refinement.*
-
 #### Epic: Sign Up and Sign In
 - As a **User** I want to **Sign up for an account** so that **my lists and watched titles are saved**
 
-- As a **User** I want to **Sign in ** so that **I can create, modify and delete my watch lists and watched titles**
+- As a **User** I want to **Sign in** so that **I can create, modify and delete my watch lists and watched titles**
 
 
 #### Epic: Search
@@ -116,28 +109,149 @@ This list contains user stories from each of the Epics above that are not requir
 
 ### Wireframes
 
-#### Wireframes for multiple standard screen sizes, created using industry standard software
+#### Home Logged Out
 
-#### Utilise an industry standard program for creation of wireframes
+Desktop:
 
-#### Provide UX/UI design documentation(wireframes) that adequately show Agile methodology implementation.
+![Home Desktop](docs/wireframes/HOME - desktop.png)
 
-*Provides wireframes that show exceptional planning of project flow and structure including but not limited to space distribution, content  prioritisation, intended actions, functions, relationships between  screens.*
+Tablet:
 
-*Produce an application with an intuitive user interface, with no impediments to user flow*
+![Home Tablet](docs/wireframes/HOME-tablet.png)
+
+Mobile:
+
+![Home Mobile](docs/wireframes/HOME-mobile-signedout.png)
+
+#### Home Logged In
+
+Desktop:
+
+![Home Desktop Signed In](docs/wireframes/HOME-desktop-signedin.png)
+
+Tablet:
+
+![Home Tablet Signed In](docs/wireframes/HOME-tablet-signedin.png)
+
+Mobile:
+
+![Home Desktop Signed In](docs/wireframes/HOME-mobile-signedin.png)
+
+#### Sign Up
+
+![Desktop Sign Up](docs/wireframes/SIGNUP-desktop.png)
+
+Tablet:
+
+![Tablet Sign Up](docs/wireframes/SIGNUP-tablet.png)
+
+Mobile:
+
+![Mobile Sign Up](docs/wireframes/SIGNUP-mobile.png)
+
+#### Log In
+
+Desktop:
+
+![Desktop Log In](docs/wireframes/LOGIN-desktop.png)
+
+Tablet:
+
+![Tablet Log In](docs/wireframes/LOGIN-tablet.png)
+
+Mobile:
+
+![Mobile Log In](docs/wireframes/LOGIN-mobile.png)
+
+#### Profile
+
+Desktop:
+
+![Desktop Profile](docs/wireframes/PROFILE-desktop-signedin.png)
+
+Tablet:
+
+![Tablet Profile](docs/wireframes/PROFILE-tablet-signedin.png)
+
+Mobile:
+
+![Mobile Profile](docs/wireframes/PROFILE-mobile-signedin.png)
+
+#### Search Logged Out
+
+Desktop:
+
+![Desktop Search](docs/wireframes/SEARCH-desktop.png)
+
+Tablet:
+
+![Tablet Search](docs/wireframes/SEARCH-tablet.png)
+
+Mobile:
+
+![Mobile Search](docs/wireframes/SEARCH-mobile.png)
+
+#### Search Logged In
+
+Desktop:
+
+![Desktop Search signed in](docs/wireframes/SEARCH-desktop-signedin.png)
+
+Tablet:
+
+![Tablet Search signed in](docs/wireframes/SEARCH-tablet-signedin.png)
+
+Mobile:
+
+![Mobile Search signed in](docs/wireframes/SEARCH-mobile-signedin.png)
+
+#### Create List
+
+Desktop:
+
+![Desktop Create List](docs/wireframes/CREATELIST-desktop-signedin.png)
+
+Tablet:
+
+![Tablet Create List](docs/wireframes/CREATELIST-tablet-signedin.png)
+
+Mobile:
+
+![Mobile Create List](docs/wireframes/CREATELIST-mobile-signedin.png)
+
+#### View List Logged Out
+
+Desktop:SignedSigned
+
+![Desktop List Not Signed In](docs/wireframes/SPECIFICLIST-desktop.png)
+
+Tablet:
+
+![Tablet List Not Signed In](docs/wireframes/SPECIFICLIST-tablet.png)
+
+Mobile:
+
+![Mobile List Not Signed In](docs/wireframes/SPECIFICLIST-mobile.png)
+
+#### View List LoggedSignedSigned In
+
+Desktop:
+
+![Desktop List Signed In](docs/wireframes/SPECIFICLIST-desktop-signedin.png)
+
+Tablet:
+
+![Tablet List Signed In](docs/wireframes/SPECIFICLIST-tablet-signedin.png)
+
+Mobile:
+
+![Mobile List Signed In](docs/wireframes/SPECIFICLIST-mobile-signedin.png)
 
 ### Trello Screenshots
-#### Screenshots of your Trello board throughout the duration of the project
 
-#### Select and follow a commonly used planning methodology, such as Kanban, Trello, Jira, or Asana.
+For this project the team made use of Trello for project management. The board can be found here: https://trello.com/b/DPS3LJow/full-stack-app
 
-*Simple and clear standards for planning methodology chosen and adhered to*
-
-*Excellent use of task delegation with Kanban board of tickets assigned to team  members labelled with difficulty level and corresponding Git commits, with consideration of the strength and weaknesses of team members and project/team conditions*
-
-Trello Board: https://trello.com/b/DPS3LJow/full-stack-app
-
-For this project the team made use of Trello for project management. Tasks were converted into cards and given due dates and appropriate labels according to category, priority and estimated time to completion.
+Tasks were converted into cards and given due dates and appropriate labels according to category, priority and estimated time to completion.
 
 ![trello labels list](docs/trello/trello-labels-list.png)
 
