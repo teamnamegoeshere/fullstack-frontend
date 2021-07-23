@@ -17,13 +17,26 @@ Frontend Repository: https://github.com/teamnamegoeshere/fullstack-frontend
 #### Target Audience
 #### Tech Stack
 
-*At a minimum use the following technologies:
-Rails
-React.js*
+Front End
+* HTML
+* CSS
+* Javascript
+* React
 
-*Deploy the application to a cloud hosting service*
+Back End
+* Rails
+* TMDB API - what we’ll be populating the movies for the website with
+* PostgreSQL
 
-*User testing and formal testing framework*
+Hosting
+* Heroku -  back end
+* Netlify - front end
+
+Testing
+* RSpec
+* Jest
+* Cypress
+
 
 ### Dataflow Diagram
 *Provides dataflow diagram(s) that strictly follow the standard conventions to clearly identify the processes within your application. Clearly depicts where data is coming from, where it is going and how it is being stored.*
