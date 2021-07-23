@@ -34,7 +34,8 @@ Hosting
 
 Testing
 * RSpec
-* React Testing Library
+* Jest
+* Cypress
 
 
 ### Dataflow Diagram
