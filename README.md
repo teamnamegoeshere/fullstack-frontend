@@ -113,7 +113,7 @@ This list contains user stories from each of the Epics above that are not requir
 
 Desktop:
 
-![Home Desktop](docs/wireframes/HOME - desktop.png)
+![Home Desktop](docs/wireframes/HOME-desktop.png)
 
 Tablet:
 
@@ -138,6 +138,8 @@ Mobile:
 ![Home Desktop Signed In](docs/wireframes/HOME-mobile-signedin.png)
 
 #### Sign Up
+
+Desktop:
 
 ![Desktop Sign Up](docs/wireframes/SIGNUP-desktop.png)
 
@@ -221,7 +223,7 @@ Mobile:
 
 #### View List Logged Out
 
-Desktop:SignedSigned
+Desktop:
 
 ![Desktop List Not Signed In](docs/wireframes/SPECIFICLIST-desktop.png)
 
@@ -233,7 +235,7 @@ Mobile:
 
 ![Mobile List Not Signed In](docs/wireframes/SPECIFICLIST-mobile.png)
 
-#### View List LoggedSignedSigned In
+#### View List Logged In
 
 Desktop:
 
