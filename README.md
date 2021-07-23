@@ -6,7 +6,10 @@ Frontend Repository: https://github.com/teamnamegoeshere/fullstack-frontend
 
 Backend Repository: https://github.com/teamnamegoeshere/fullstack-backend
 
-#### Purpose/ Conceptulisation
+### Description
+
+#### Purpose/ Conceptualisation
+
 Popcorn Bucket List was initially derived from the Movie Scratch Off Posters and evolved into a multifaceted application. Notably entertainment consumption synonymous in todays culture. Hence Popcorn Bucket List tackles the chronic problem of the paradox of choice whereby essentially choice is conducive to paralysis rather than liberation as there are so many streaming services each with their own content libraries. Such browsing and information overload, is highlighted by threads on Reddit like “Anybody else really struggle with deciding on a movie to watch?” And the science of indecision; the notion that were you to calculate the amount of time you spend searching/deciding what to watch. 
 
 #### Functionality and Features
@@ -24,7 +27,7 @@ Popcorn Bucket List is a computer, tablet and mobile friendly companion for anyo
 Front End
 * HTML
 * CSS
-* Javascript
+* JavaScript
 * React
 
 Back End
@@ -106,15 +109,7 @@ This list contains user stories from each of the Epics above that are not requir
 
 ### Wireframes
 
-#### Wireframes for multiple standard screen sizes, created using industry standard software
 
-#### Utilise an industry standard program for creation of wireframes
-
-#### Provide UX/UI design documentation(wireframes) that adequately show Agile methodology implementation.
-
-*Provides wireframes that show exceptional planning of project flow and structure including but not limited to space distribution, content  prioritisation, intended actions, functions, relationships between  screens.*
-
-*Produce an application with an intuitive user interface, with no impediments to user flow*
 
 ### Trello Screenshots
 
