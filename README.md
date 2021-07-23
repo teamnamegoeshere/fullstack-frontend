@@ -12,9 +12,19 @@
 
 Frontend Repository: https://github.com/teamnamegoeshere/fullstack-frontend
 
-#### Purpose
+#### Purpose/ Conceptulisation
+Popcorn Bucket List was initially derived from the Movie Scratch Off Posters and evolved into a multifaceted application. Notably entertainment consumption synonymous in todays culture. Hence Popcorn Bucket List tackles the chronic problem of the paradox of choice whereby essentially choice is conducive to paralysis rather than liberation as there are so many streaming services each with their own content libraries. Such browsing and information overload, is highlighted by threads on Reddit like “Anybody else really struggle with deciding on a movie to watch?” And the science of indecision; the notion that were you to calculate the amount of time you spend searching/deciding what to watch is. 
+
 #### Functionality and Features
+As such Popcorn Bucket List puts the liberation and fun back into entertainment consumption! It functions as the digital destination for users to curate personalised movie To Watch Lists, from award winning films, old classics, genres, box office grosses and so on. Moreover, Popcorn Bucket List puts the peace of mind into keeping track of what movies you have and haven’t seen yet with a checkbox adding interactive element to the experience users can track movies they’ve watched are watching or want to watch.
+
+Acting as a movie aggregation service the social aspect is a key feature of Popcorn Bucket List. Entertainment viewing is already social with people talking about what movies they’ve seen, they’re favourites and so forth. So with all this in mind Popcorn Bucket List parallels this evolving landscape and movie consumption culture and aftermath where everyone is a film critic. Users lists are visible to other users for inspiration. Notably Popcorn Bucket List is especially pertinent in coronavirus times when people are going online for entertainment streaming of movies has surged by 12%.
+
 #### Target Audience
+Popcorn Bucket List is the companion for avid or just amateur movie watches alike! Indeed there is an appeal of movies to all ages, genders, languages, socio economic status, as such Popcorn Bucket List caters to this inclusive and unifying nature. 
+
+Popcorn Bucket List is a computer, tablet and mobile friendly companion for anyone with internet access and the basic technical knowhow. Furthermore considering the breadth of movies at everyone’s finger tips Popcorn Bucket List caters to users seeking a highly curated and social experience when it comes to deciding what to watch and keeping track of what they have watched.
+
 #### Tech Stack
 
 Front End
