@@ -113,7 +113,9 @@ This list contains user stories from each of the Epics above that are not requir
 
 ### Trello Screenshots
 
-For this project the team made use of Trello for project management. The board can be found here: https://trello.com/b/DPS3LJow/full-stack-app Tasks were converted into cards and given due dates and appropriate labels according to category, priority and estimated time to completion.
+For this project the team made use of Trello for project management. The board can be found here: https://trello.com/b/DPS3LJow/full-stack-app
+
+Tasks were converted into cards and given due dates and appropriate labels according to category, priority and estimated time to completion.
 
 ![trello labels list](docs/trello/trello-labels-list.png)
 
