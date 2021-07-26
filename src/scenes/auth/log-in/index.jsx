@@ -1,0 +1,1 @@
+export const LogIn = () => <p>Log In</p>
