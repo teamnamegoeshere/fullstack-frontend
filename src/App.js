@@ -13,26 +13,26 @@ import { NavBar } from "./scenes/nav"
 import { Footer } from "./scenes/footer"
 
 const App = () => {
+
   return (
     <>
-    <Router>
+      <Router>
+          <NavBar />
 
-        <NavBar />
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
-        <Switch>
-          <Route path="/log-in">
-            <LogIn />
-          </Route>
-          <Route path="/sign-up">
-            <SignUp />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-    </Router>
+          {/* A <Switch> looks through its children <Route>s and
+              renders the first one that matches the current URL. */}
+          <Switch>
+            <Route path="/log-in">
+              <LogIn />
+            </Route>
+            <Route path="/sign-up">
+              <SignUp />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+      </Router>
     <Footer />
     </>
   )

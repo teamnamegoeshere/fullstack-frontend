@@ -1,8 +1,11 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
+import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom"
 
-/* sends first and last name, username, email, date of birth,
- password and password confirmation to the Rails Backend /auth/sign_up route
-*/
+
+
+// grab backend to use based on environment
+import { backend } from '../../../data'
 
 export const SignUp = () => {
     const [firstName, setFirstName] = useState("")
@@ -15,24 +18,50 @@ export const SignUp = () => {
     const [loading, setLoading] = useState(false)
     const [errorMessage, setErrorMessage] = useState("")
 
-    const signUp = () => {
+    const history = useHistory()
+
+    /* sends first and last name, username, email, date of birth,
+    password and password confirmation to the Rails Backend /auth/sign_up route
+    */
+    const signUp = async (e) => {
+        // prevent default form behaviour
+        e.preventDefault()
         // set loading state to true
         setLoading(true)
-        // send post request to the API
-        
-        // if success:
+        // unset error message
+        setErrorMessage("")
+        // send post request to the backend
+        try {
+            const { data } = await backend.post("/auth/sign_up", {
+                first_name: firstName,
+                last_name: lastName,
+                email,
+                username,
+                password,
+                password_confirmation: passwordConfirmation,
+                date_of_birth: dateOfBirth,
+            })
+
+            // if success:
             // save JWT to local storage
+            localStorage.setItem('jwt', data.jwt)
             // redirect to home page
-        // If Fail:
+            history.push("/")
+        } catch (error) {
+            // If Fail:
             // display error message to the user
+            setErrorMessage(error.message)
             // stop loading
+            setLoading(false)
+        }
+        
     }
 
 return (
     // error messages and initial loading
     <>
     {errorMessage}
-    {loading && <p>Loading...</p>}
+    {loading && <p>Loading...</p>} 
 
 
     <form onSubmit={signUp}>
@@ -55,7 +84,9 @@ return (
         </label>
         <input type="submit" value="Submit" />
     </form>
+
+    {/* Link to Log in */}
+    <Link to="/log-in">or log into an existing account</Link>
     </>
-    // or log into an existing account
 )
 }
