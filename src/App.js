@@ -10,9 +10,11 @@ import { Home } from "./scenes/home"
 import { LogIn } from "./scenes/auth/log-in"
 import { SignUp } from "./scenes/auth/sign-up"
 import { NavBar } from "./scenes/nav"
+import { Footer } from "./scenes/footer"
 
 const App = () => {
   return (
+    <>
     <Router>
 
         <NavBar />
@@ -31,6 +33,8 @@ const App = () => {
           </Route>
         </Switch>
     </Router>
+    <Footer />
+    </>
   )
 }
 
