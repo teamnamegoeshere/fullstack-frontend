@@ -63,7 +63,7 @@ return (
     {errorMessage}
     {loading && <p>Loading...</p>} 
 
-
+    {/* Sign up form */}
     <form onSubmit={signUp}>
         <input onChange={(e) => setFirstName(e.target.value)} value={firstName}
         id="firstName" placeholder="first name" />
