@@ -12,8 +12,19 @@ export const setBackendUrl = () => {
     }
 }
 
+// declare backendUrl
+
 const backendUrl = setBackendUrl()
 
+// declare jwt, fetched from browser localStorage
+
+const jwt = localStorage.getItem('jwt')
+
+// create const using axios for backend to be accessible throughout application
+// and send JWT back to backend
 export const backend = axios.create({
-    baseURL: backendUrl
+    baseURL: backendUrl,
+    headers: {
+        "Authorization": `Bearer ${jwt}`
+    }
 })
