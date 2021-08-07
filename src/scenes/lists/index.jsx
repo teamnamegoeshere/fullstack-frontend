@@ -65,8 +65,26 @@ export const Lists = () => {
     }
     
   }
-    const deleteList= () => {
+  // List delete method
+    const deleteList = async (id, index) => {
+      // set loading to true
       setLoading(true)
+
+      try {
+        // send request to backend
+        await backend.delete(`/lists/${id}`)
+        // make copy of lists array
+        const listsCopy = [...lists]
+        // delete entry with matching ID
+        listsCopy.splice(index, 1)
+        // update lists in React state
+        setLists(listsCopy)
+      } catch (error) {
+        setErrorMessage(error.message)
+      } finally {
+        // set loading state to false
+        setLoading(false)
+      }
 
     }
 
@@ -80,7 +98,8 @@ export const Lists = () => {
           <p>
             Lists
           </p>
-          {lists.map(({id, title, description }) => (
+          {/* map over each entry in Lists */}
+          {lists.map(({id, title, description }, index) => (
             // public is a reserved word so need to revisit and rename
             // to shared then add to destructuring assignment above
             // add username to lists
@@ -88,7 +107,8 @@ export const Lists = () => {
             <p>{title}</p>
             <p>{description}</p>
             {/* <p>{shared}</p> */}
-            <button>DELETE</button>
+            {/* delete button */}
+            <button onClick={() => deleteList(id, index)}>DELETE</button>
             </article>
           ))}
        
