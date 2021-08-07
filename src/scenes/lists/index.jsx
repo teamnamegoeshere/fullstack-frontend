@@ -64,7 +64,12 @@ export const Lists = () => {
       setLoading(false)
     }
     
-}
+  }
+    const deleteList= () => {
+      setLoading(true)
+
+    }
+
 
     return (
         <div>
@@ -83,6 +88,7 @@ export const Lists = () => {
             <p>{title}</p>
             <p>{description}</p>
             {/* <p>{shared}</p> */}
+            <button>DELETE</button>
             </article>
           ))}
        
