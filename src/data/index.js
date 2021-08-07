@@ -4,7 +4,7 @@ import axios from "axios"
 
 export const setBackendUrl = () => {
     if (process.env.NODE_ENV === "production") {
-        return "http://backend.popcornbucketlist.com"
+        return "https://backend.popcornbucketlist.com"
     }
 
     if (process.env.NODE_ENV === "development") {
