@@ -10,7 +10,7 @@ export const Lists = () => {
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
     // const [shared, setShared] = useState(false)
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [errorMessage, setErrorMessage] = useState("")
 
 
@@ -18,6 +18,8 @@ export const Lists = () => {
     useEffect(() => {
         backend.get("/lists")
             .then(({ data }) => setLists(data))
+            .catch((error) => setErrorMessage(error.message))
+            .finally(setLoading(false))
     }, [])
 
     const createList = async (e) => {
@@ -52,22 +54,17 @@ export const Lists = () => {
           // set cloned array of lists as state
           setLists(listsClone)
         // if success:
-        setLoading(false)
-        // (res => console.log("response from backend", res))
     } catch (error) {
         // If Fail:
         // display error message to the user
         setErrorMessage(error.message)
         // stop loading
         setLoading(false)
+    } finally {
+      setLoading(false)
     }
     
 }
-
-  // input handler
-    const handleInputChange = (event, setter) => {
-      setter(event.target.value)
-    }
 
     return (
         <div>
@@ -76,7 +73,7 @@ export const Lists = () => {
 
           {/* List of Lists */}
           <p>
-            Movie Bucket List Lists
+            Lists
           </p>
           {lists.map(({id, title, description }) => (
             // public is a reserved word so need to revisit and rename
@@ -91,11 +88,11 @@ export const Lists = () => {
        
        {/* Create list form */}
           <form onSubmit={createList}>
-            <input onChange={(e) => handleInputChange(e, setTitle)} value={title} placeholder="title" />
-            <input onChange={(e) => handleInputChange(e, setDescription)} value={description} placeholder="description" />
+            <input onChange={(e) => setTitle(e.target.value)} value={title} placeholder="title" />
+            <input onChange={(e) => setDescription(e.target.value)} value={description} placeholder="description" />
             {/* <label>
               Share this list
-            <input onChange={(e) => handleInputChange(e, setShared)} value={shared} type="checkbox"/>
+            <input onChange={(e) => setShared(e.target.value)} value={shared} type="checkbox"/>
             </label> */}
             <input type="submit" value="Submit" />
             
