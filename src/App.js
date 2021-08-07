@@ -10,6 +10,7 @@ import { Home } from "./scenes/home"
 import { LogIn } from "./scenes/auth/log-in"
 import { SignUp } from "./scenes/auth/sign-up"
 import { NavBar } from "./scenes/nav"
+import { Lists } from "./scenes/lists"
 import { Footer } from "./scenes/footer"
 
 const App = () => {
@@ -27,6 +28,9 @@ const App = () => {
             </Route>
             <Route path="/sign-up">
               <SignUp />
+            </Route>
+            <Route path="/lists">
+              <Lists />
             </Route>
             <Route path="/">
               <Home />

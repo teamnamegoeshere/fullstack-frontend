@@ -9,13 +9,16 @@ export const NavBar = () => {
                 <ul>
                     <p>Popcorn Bucket List</p>
                     <li>
-                    <Link to="/">Home</Link>
+                        <Link to="/">Home</Link>
                     </li>
                     <li>
-                    <Link to="/log-in">Log In</Link>
+                        <Link to="/log-in">Log In</Link>
                     </li>
                     <li>
-                    <Link to="/sign-up">Sign Up</Link>
+                        <Link to="/sign-up">Sign Up</Link>
+                    </li>
+                    <li>
+                        <Link to="/Lists">Lists</Link>
                     </li>
                 </ul>
             </nav>
