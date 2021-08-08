@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 // grab backend to use based on environment
 import { backend } from "../../data"
@@ -89,23 +90,54 @@ export const Lists = () => {
     }
 
     // // List update method
-    // const updateList = async (id, index) => {
-    //   // set loading to true
+    // const editList = async (id, index) => {
+    //   // prevent default form behaviour
+    //   e.preventDefault()
+    //   // set loading state to true
     //   setLoading(true)
+    //   // unset error message
+    //   setErrorMessage("")
 
+    //   // update form inputs 
+    //   setTitle("")
+    //   setDescription("")
+    //   // setShared("false")
+      
+    //   // send put request to the backend
     //   try {
-    //     // send request to backend
-    //     await backend.updateList(`lists${id}`,{
-          // title,
-          // description
-          // })
-    //     // 
+    //       const { data } = await backend.put(`/lists/${id}`, {
+    //         title,
+    //         description
+    //       // shared,
+    //       })
+  
+    //       // clear form fields after post
+    //       setTitle("")
+    //       setDescription("")
+    //       // setShared("false")
+  
+    //       // clone list of lists and add new entry to the list
+    //       const listsClone = [...lists]
+    //       // add new list to cloned array
+    //         listsClone.push({
+    //           title: data.title,
+    //           description: data.description,
+    //           // shared,
+    //           id: data.id
+    //         })
+    //         // set cloned array of lists as state
+    //         setLists(listsClone)
+    //       // if success:
     //   } catch (error) {
-        // setErrorMessage(error.message)
-      // } finally {
-        // set loading state to false
-        // setLoading(false)
-      // }
+    //       // If Fail:
+    //       // display error message to the user
+    //       setErrorMessage(error.message)
+    //       // stop loading
+    //       setLoading(false)
+    //   } finally {
+    //     setLoading(false)
+    //   }
+      
     // }
 
 
@@ -124,12 +156,15 @@ export const Lists = () => {
             // to shared then add to destructuring assignment above
             // add username to lists
             <article key={id}>
-            <p>{title}</p>
-            <p>{description}</p>
-            {/* <p>{shared}</p> */}
-            {/* delete button */}
-            <button onClick={() => deleteList(id, index)}>DELETE</button>
+              <Link key={id} to={`/lists/${id}`}>
+              <p>{title}</p>
+              <p>{description}</p>
+              {/* <p>{shared}</p> */}
+              </Link>
+              {/* delete button */}
+              <button onClick={() => deleteList(id, index)}>DELETE</button>
             </article>
+            
           ))}
        
        {/* Create list form */}
