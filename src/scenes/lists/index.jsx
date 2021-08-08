@@ -19,7 +19,7 @@ export const Lists = () => {
         backend.get("/lists")
             .then(({ data }) => setLists(data))
             .catch((error) => setErrorMessage(error.message))
-            .finally(setLoading(false))
+            .finally(() => setLoading(false))
     }, [])
 
     const createList = async (e) => {
@@ -87,6 +87,26 @@ export const Lists = () => {
       }
 
     }
+
+    // // List update method
+    // const updateList = async (id, index) => {
+    //   // set loading to true
+    //   setLoading(true)
+
+    //   try {
+    //     // send request to backend
+    //     await backend.updateList(`lists${id}`,{
+          // title,
+          // description
+          // })
+    //     // 
+    //   } catch (error) {
+        // setErrorMessage(error.message)
+      // } finally {
+        // set loading state to false
+        // setLoading(false)
+      // }
+    // }
 
 
     return (
