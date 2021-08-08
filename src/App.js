@@ -9,6 +9,7 @@ import './App.css';
 import { Home } from "./scenes/home"
 import { LogIn } from "./scenes/auth/log-in"
 import { SignUp } from "./scenes/auth/sign-up"
+import { LogOut } from "./scenes/auth/log-out"
 import { NavBar } from "./scenes/nav"
 import { Lists } from "./scenes/lists"
 import { Footer } from "./scenes/footer"
@@ -25,6 +26,9 @@ const App = () => {
           <Switch>
             <Route path="/log-in">
               <LogIn />
+            </Route>
+            <Route path="/log-out">
+              <LogOut />
             </Route>
             <Route path="/sign-up">
               <SignUp />
