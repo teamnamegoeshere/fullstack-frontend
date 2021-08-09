@@ -1,5 +1,6 @@
 
 import { useEffect, useState } from "react"
+import { Link } from "react-router-dom"
 
 // grab backend to use based on environment
 import { backend } from "../../data"
@@ -19,9 +20,10 @@ export const Lists = () => {
         backend.get("/lists")
             .then(({ data }) => setLists(data))
             .catch((error) => setErrorMessage(error.message))
-            .finally(setLoading(false))
+            .finally(() => setLoading(false))
     }, [])
 
+    // Create list
     const createList = async (e) => {
     // prevent default form behaviour
     e.preventDefault()
@@ -36,12 +38,6 @@ export const Lists = () => {
           description
         // shared,
         })
-
-        // clear form fields after post
-        setTitle("")
-        setDescription("")
-        // setShared("false")
-
         // clone list of lists and add new entry to the list
         const listsClone = [...lists]
         // add new list to cloned array
@@ -66,6 +62,7 @@ export const Lists = () => {
     
   }
   // List delete method
+  // Do we want to delete from lists screen or click on individual list first?
     const deleteList = async (id, index) => {
       // set loading to true
       setLoading(true)
@@ -88,7 +85,6 @@ export const Lists = () => {
 
     }
 
-
     return (
         <div>
           {errorMessage}
@@ -104,13 +100,18 @@ export const Lists = () => {
             // to shared then add to destructuring assignment above
             // add username to lists
             <article key={id}>
-            <p>{title}</p>
-            <p>{description}</p>
-            {/* <p>{shared}</p> */}
-            {/* delete button */}
-            <button onClick={() => deleteList(id, index)}>DELETE</button>
+              <Link key={id} to={`/lists/${id}`}>
+              <p>{title}</p>
+              <p>{description}</p>
+              {/* <p>{shared}</p> */}
+              </Link>
+              {/* delete button */}
+              <button onClick={() => deleteList(id, index)}>DELETE</button>
             </article>
+            
           ))}
+        {/* create list button */}
+        <Link to ="/lists/create"><button>New List</button></Link>
        
        {/* Create list form */}
           <form onSubmit={createList}>

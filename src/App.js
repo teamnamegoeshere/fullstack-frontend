@@ -11,6 +11,8 @@ import { LogIn } from "./scenes/auth/log-in"
 import { SignUp } from "./scenes/auth/sign-up"
 import { NavBar } from "./scenes/nav"
 import { Lists } from "./scenes/lists"
+import { CreateList } from "./scenes/create-list"
+import { ListDetails } from "./scenes/list-details"
 import { Footer } from "./scenes/footer"
 
 const App = () => {
@@ -28,6 +30,15 @@ const App = () => {
             </Route>
             <Route path="/sign-up">
               <SignUp />
+            </Route>
+            <Route path='/lists/create'> 
+              <CreateList />
+            </Route>
+            <Route path='/lists/update/:id'> 
+              <CreateList />
+            </Route>
+            <Route path='/lists/:id'> 
+              <ListDetails />
             </Route>
             <Route path="/lists">
               <Lists />
