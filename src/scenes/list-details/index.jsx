@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams, useHistory } from "react-router-dom"
+import { useParams, useHistory, Link } from "react-router-dom"
 
 // grab backend to use based on environment
 import { backend } from "../../data"
@@ -48,6 +48,8 @@ export const ListDetails = () => {
               <p>{list.title}</p>
               <p>{list.description}</p>
               {/* <p>{shared}</p> */}
+              {/* edit button */}
+              <Link key={id} to={`/lists/update/${id}`}><button>Edit</button></Link>
               {/* delete button */}
               <button onClick={() => deleteList(id)}>DELETE</button>
             </article>

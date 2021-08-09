@@ -38,12 +38,6 @@ export const Lists = () => {
           description
         // shared,
         })
-
-        // clear form fields after post
-        setTitle("")
-        setDescription("")
-        // setShared("false")
-
         // clone list of lists and add new entry to the list
         const listsClone = [...lists]
         // add new list to cloned array
@@ -91,58 +85,6 @@ export const Lists = () => {
 
     }
 
-    // // List update method
-    // const editList = async (id, index) => {
-    //   // prevent default form behaviour
-    //   e.preventDefault()
-    //   // set loading state to true
-    //   setLoading(true)
-    //   // unset error message
-    //   setErrorMessage("")
-
-    //   // update form inputs 
-    //   setTitle("")
-    //   setDescription("")
-    //   // setShared("false")
-      
-    //   // send put request to the backend
-    //   try {
-    //       const { data } = await backend.put(`/lists/${id}`, {
-    //         title,
-    //         description
-    //       // shared,
-    //       })
-  
-    //       // clear form fields after post
-    //       setTitle("")
-    //       setDescription("")
-    //       // setShared("false")
-  
-    //       // clone list of lists and add new entry to the list
-    //       const listsClone = [...lists]
-    //       // add new list to cloned array
-    //         listsClone.push({
-    //           title: data.title,
-    //           description: data.description,
-    //           // shared,
-    //           id: data.id
-    //         })
-    //         // set cloned array of lists as state
-    //         setLists(listsClone)
-    //       // if success:
-    //   } catch (error) {
-    //       // If Fail:
-    //       // display error message to the user
-    //       setErrorMessage(error.message)
-    //       // stop loading
-    //       setLoading(false)
-    //   } finally {
-    //     setLoading(false)
-    //   }
-      
-    // }
-
-
     return (
         <div>
           {errorMessage}
@@ -168,6 +110,8 @@ export const Lists = () => {
             </article>
             
           ))}
+        {/* create list button */}
+        <Link to ="/lists/create"><button>New List</button></Link>
        
        {/* Create list form */}
           <form onSubmit={createList}>
