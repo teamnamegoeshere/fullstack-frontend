@@ -23,6 +23,9 @@ export const NavBar = () => {
                     <li>
                         <Link to="/lists">Lists</Link>
                     </li>
+                    <li>
+                        <Link to="/list-search">List Search</Link>
+                    </li>
                 </ul>
             </nav>
     )

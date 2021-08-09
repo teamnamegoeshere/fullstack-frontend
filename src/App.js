@@ -14,6 +14,7 @@ import { NavBar } from "./scenes/nav"
 import { Lists } from "./scenes/lists"
 import { CreateList } from "./scenes/create-list"
 import { ListDetails } from "./scenes/list-details"
+import { ListSearch } from "./scenes/list-search"
 import { Footer } from "./scenes/footer"
 
 const App = () => {
@@ -34,6 +35,9 @@ const App = () => {
             </Route>
             <Route path="/sign-up">
               <SignUp />
+            </Route>
+            <Route path="/list-search">
+              <ListSearch />
             </Route>
             <Route path='/lists/create'> 
               <CreateList />
