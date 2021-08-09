@@ -68,6 +68,7 @@ export const Lists = () => {
     
   }
   // List delete method
+  // Do we want to delete from lists screen or click on individual list first?
     const deleteList = async (id, index) => {
       // set loading to true
       setLoading(true)

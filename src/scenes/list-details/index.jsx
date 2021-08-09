@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { useParams, useHistory } from "react-router-dom"
 
 // grab backend to use based on environment
 import { backend } from "../../data"
@@ -12,6 +12,7 @@ export const ListDetails = () => {
     const [list, setList] = useState("")
     const [loading, setLoading] = useState(true)
     const [errorMessage, setErrorMessage] = useState("")
+    const history = useHistory()
 
     // get list from backend
     useEffect(() => {
@@ -20,6 +21,23 @@ export const ListDetails = () => {
             .catch((error) => setErrorMessage(error.message))
             .finally(() => setLoading(false))
     }, [id])
+
+      // List delete method
+      const deleteList = async (id, index) => {
+        // set loading to true
+        setLoading(true)
+  
+        try {
+          // send request to backend
+          await backend.delete(`/lists/${id}`)
+          history.push("/lists")
+        } catch (error) {
+          setErrorMessage(error.message)
+        // set loading state to false
+            setLoading(false)
+        }
+  
+      }
 
     return (
         <>
@@ -31,7 +49,7 @@ export const ListDetails = () => {
               <p>{list.description}</p>
               {/* <p>{shared}</p> */}
               {/* delete button */}
-              {/* <button onClick={() => deleteList(id, index)}>DELETE</button> */}
+              <button onClick={() => deleteList(id)}>DELETE</button>
             </article>
         </>
     )
