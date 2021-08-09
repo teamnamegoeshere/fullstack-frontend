@@ -23,6 +23,7 @@ export const Lists = () => {
             .finally(() => setLoading(false))
     }, [])
 
+    // Create list
     const createList = async (e) => {
     // prevent default form behaviour
     e.preventDefault()
