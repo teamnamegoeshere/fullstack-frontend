@@ -20,24 +20,31 @@ useEffect(() => {
         .finally(() => setLoading(false))
 }, [query])
 
+const imageUrl = (poster_path) => {
+    return ("https://image.tmdb.org/t/p/w500" + {poster_path})
+}
+
 return (
     <>
+    {errorMessage}
+    {loading && <p>Loading...</p>}
+
     {/* Search Movies */}
     <form >
         {/* onSubmit={getMovies} */}
-                    <input onChange={(e) => setQuery(e.target.value)} value={query} placeholder="search term" />
-                    {/* <input onChange={(e) => setDescription(e.target.value)} value={description} placeholder="description" /> */}
-                    {/* <input type="submit" value="Submit" /> */}
+        <input onChange={(e) => setQuery(e.target.value)} value={query} placeholder="search term" />
+        {/* <input type="submit" value="Submit" /> */}
                     
     </form>
-    {results.map(({id, title, overview }) => (
+    {results.map(({id, title, overview, poster_path }) => (
+        
             <article key={id}>
             {/* <Link key={id} to={`/movies/${id}`}> */}
             <p>{title}</p>
             <p>{overview}</p>
+            <img src={imageUrl} alt="poster"/>
+            <p>{imageUrl}</p>
             {/* </Link> */}
-            {/* delete button */}
-            {/* <button onClick={() => deleteList(id, index)}>DELETE</button> */}
             </article>
             
         ))}
