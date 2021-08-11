@@ -47,7 +47,7 @@ export const ListDetails = () => {
             <article>
               <p>{list.title}</p>
               <p>{list.description}</p>
-              {/* <p>{shared}</p> */}
+              {(list.shared && <p>shared</p>) || <p>not shared</p>}
               {/* edit button */}
               <Link key={id} to={`/lists/update/${id}`}><button>Edit</button></Link>
               {/* delete button */}

@@ -95,7 +95,7 @@ export const Lists = () => {
             Lists
           </p>
           {/* map over each entry in Lists */}
-          {lists.map(({id, title, description }, index) => (
+          {lists.map(({id, title, description, shared }, index) => (
             // public is a reserved word so need to revisit and rename
             // to shared then add to destructuring assignment above
             // add username to lists
@@ -103,7 +103,7 @@ export const Lists = () => {
               <Link key={id} to={`/lists/${id}`}>
               <p>{title}</p>
               <p>{description}</p>
-              {/* <p>{shared}</p> */}
+              {shared && <p>shared</p>}
               </Link>
               {/* delete button */}
               <button onClick={() => deleteList(id, index)}>DELETE</button>

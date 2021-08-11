@@ -11,7 +11,7 @@ export const CreateList = () => {
     // const [lists, setLists] = useState([])
     const [title, setTitle] = useState("")
     const [description, setDescription] = useState("")
-    // const [shared, setShared] = useState(false)
+    const [shared, setShared] = useState(false)
     const [loading, setLoading] = useState(false)
     const [errorMessage, setErrorMessage] = useState("")
 
@@ -23,6 +23,7 @@ export const CreateList = () => {
 			.then(({ data }) => {				
 				setTitle(data.title)
                 setDescription(data.description)
+                setShared(data.shared)
 			})
 		}
 	},[id])
@@ -40,7 +41,7 @@ export const CreateList = () => {
                 await backend.put(`/lists/${id}`, {
                     title,
                     description,
-                    // shared
+                    shared
                 })
                 // if success:
                 setLoading(false)
@@ -48,16 +49,13 @@ export const CreateList = () => {
             } else {
                 await backend.post("/lists", {
                 title,
-                description
-                // shared,
+                description,
+                shared
                 })
                 // if success:
                 setLoading(false)
                 history.push("/lists")
             }
-            // clear form fields after post
-            setTitle("")
-            setDescription("")
         } catch (error) {
             // If Fail:
             // display error message to the user
@@ -76,10 +74,10 @@ export const CreateList = () => {
           <form onSubmit={createList}>
             <input onChange={(e) => setTitle(e.target.value)} value={title} placeholder="title" />
             <input onChange={(e) => setDescription(e.target.value)} value={description} placeholder="description" />
-            {/* <label>
+            <label>
               Share this list
-            <input onChange={(e) => setShared(e.target.value)} value={shared} type="checkbox"/>
-            </label> */}
+            <input onChange={(e) => setShared(!shared)} checked={shared} type="checkbox"/>
+            </label>
             <input type="submit" value="Submit" />
             
           </form>
