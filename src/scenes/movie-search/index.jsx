@@ -36,7 +36,7 @@ return (
         {/* <input type="submit" value="Submit" /> */}
                     
     </form>
-    {results.map(({id, title, overview, poster_path }) => (
+        {results ? results.map(({id, title, overview, poster_path }) => (
         
             <article key={id}>
             {/* <Link key={id} to={`/movies/${id}`}> */}
@@ -47,7 +47,8 @@ return (
             {/* </Link> */}
             </article>
             
-        ))}
+        ))
+    : <p>No results.</p>}
     </>
 )
 }
