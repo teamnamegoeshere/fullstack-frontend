@@ -10,6 +10,7 @@ import { Home } from "./scenes/home"
 import { LogIn } from "./scenes/auth/log-in"
 import { SignUp } from "./scenes/auth/sign-up"
 import { LogOut } from "./scenes/auth/log-out"
+import { MovieSearch } from "./scenes/movie-search"
 import { NavBar } from "./scenes/nav"
 import { Lists } from "./scenes/lists"
 import { CreateList } from "./scenes/create-list"
@@ -35,6 +36,9 @@ const App = () => {
             <Route path="/sign-up">
               <SignUp />
             </Route>
+            <route path="/movies/search">
+              <MovieSearch />
+            </route>
             <Route path='/lists/create'> 
               <CreateList />
             </Route>
