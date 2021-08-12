@@ -39,7 +39,7 @@ export const LogIn = () => {
         } catch (error) {
             // If Fail:
             // display error message to the user
-            setErrorMessage(error.message)
+            setErrorMessage(error.response.data.error)
             // stop loading
             setLoading(false)
         }
