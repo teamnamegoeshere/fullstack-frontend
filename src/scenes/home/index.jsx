@@ -1,5 +1,5 @@
 export const Home = () => {
     return (
-<p>Home</p>
+<h1>Home</h1>
     )
 }
