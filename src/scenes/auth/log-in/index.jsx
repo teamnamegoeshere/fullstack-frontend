@@ -4,8 +4,8 @@ import { useHistory } from "react-router-dom"
 
 
 
-// grab backend to use based on environment
-import { backend } from '../../../data'
+// grab backend to use based on environment and grab error helper
+import { backend, errorHelper } from '../../../data'
 
 export const LogIn = () => {
     const [username, setUsername] = useState("")
@@ -39,7 +39,7 @@ export const LogIn = () => {
         } catch (error) {
             // If Fail:
             // display error message to the user
-            setErrorMessage(error.message)
+            setErrorMessage(errorHelper(error))
             // stop loading
             setLoading(false)
         }
