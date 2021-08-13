@@ -35,8 +35,15 @@ backend.interceptors.request.use((req) => {
 export const errorHelper = (error) => {
     let parsedError
     if (error.response){
+        if (error.message === "Request failed with status code 401"){
+            parsedError = "Whoops, looks like you're not logged in"
+        } else if (error.message === "Request failed with status code 500"){
+            parsedError = "Something is very wrong with the server"
+        }
+         else {
         let filteredError = error.response.data
         parsedError = JSON.stringify(filteredError)
+        }
     } else {
         parsedError = error.message
     }
