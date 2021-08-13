@@ -20,9 +20,8 @@ useEffect(() => {
         .finally(() => setLoading(false))
 }, [query])
 
-const imageUrl = (poster_path) => {
-    return ("https://image.tmdb.org/t/p/w500" + {poster_path})
-}
+
+let url = "https://image.tmdb.org/t/p/w500";
 
 return (
     <>
@@ -37,13 +36,11 @@ return (
                     
     </form>
         {results ? results.map(({id, title, overview, poster_path }) => (
-        
             <article key={id}>
             {/* <Link key={id} to={`/movies/${id}`}> */}
             <p>{title}</p>
             <p>{overview}</p>
-            <img src={imageUrl} alt="poster"/>
-            <p>{imageUrl}</p>
+            <img src={url + poster_path} alt="poster"/>
             {/* </Link> */}
             </article>
             
