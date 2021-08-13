@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
-// grab backend to use based on environment
-import { backend } from "../../data"
+// grab backend to use based on environment and grab error helper
+import { backend, errorHelper } from '../../data'
 
 export const Lists = () => {
 
@@ -19,7 +19,7 @@ export const Lists = () => {
     useEffect(() => {
         backend.get("/lists")
             .then(({ data }) => setLists(data))
-            .catch((error) => setErrorMessage(error.message))
+            .catch((error) => setErrorMessage(errorHelper(error)))
             .finally(() => setLoading(false))
     }, [])
 
@@ -53,7 +53,7 @@ export const Lists = () => {
     } catch (error) {
         // If Fail:
         // display error message to the user
-        setErrorMessage(error.message)
+        setErrorMessage(errorHelper(error))
         // stop loading
         setLoading(false)
     } finally {
@@ -77,7 +77,7 @@ export const Lists = () => {
         // update lists in React state
         setLists(listsCopy)
       } catch (error) {
-        setErrorMessage(error.message)
+        setErrorMessage(errorHelper(error))
       } finally {
         // set loading state to false
         setLoading(false)

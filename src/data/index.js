@@ -30,3 +30,15 @@ backend.interceptors.request.use((req) => {
     }
     return req
 })
+
+// error helper
+export const errorHelper = (error) => {
+    let parsedError
+    if (error.response){
+        let filteredError = error.response.data
+        parsedError = JSON.stringify(filteredError)
+    } else {
+        parsedError = error.message
+    }
+    return parsedError
+}
