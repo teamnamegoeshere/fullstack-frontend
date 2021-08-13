@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 
-// grab backend to use based on environment
-import { backend } from "../../data"
+// grab backend to use based on environment and grab error helper
+import { backend, errorHelper } from '../../data'
 
 
 export const MovieSearch = () => {
@@ -16,7 +16,7 @@ const [errorMessage, setErrorMessage] = useState("")
 useEffect(() => {
     backend.get(`/movies/search?query=${query}`)
         .then(({ data }) => setResults(data))
-        .catch((error) => setErrorMessage(error.message))
+        .catch((error) => setErrorMessage(errorHelper(error)))
         .finally(() => setLoading(false))
 }, [query])
 

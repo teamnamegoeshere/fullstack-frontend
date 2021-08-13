@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react"
 import { useParams, useHistory } from "react-router-dom"
 
-// grab backend to use based on environment
-import { backend } from "../../data"
+// grab backend to use based on environment and grab error helper
+import { backend, errorHelper } from '../../data'
 
 // Create list
 export const CreateList = () => {
@@ -59,7 +59,7 @@ export const CreateList = () => {
         } catch (error) {
             // If Fail:
             // display error message to the user
-            setErrorMessage(error.message)
+            setErrorMessage(errorHelper(error))
             // stop loading
             setLoading(false)
         }
