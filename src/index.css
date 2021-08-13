@@ -26,6 +26,10 @@ a {
   color: white;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 ul {
   list-style: none;
   margin-block-start: 0;

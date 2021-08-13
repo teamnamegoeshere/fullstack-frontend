@@ -52,9 +52,9 @@ export const Lists = () => {
           {loading && <p>Loading...</p>}
 
           {/* List of Lists */}
-          <p>
+          <h1>
             Lists
-          </p>
+          </h1>
           {/* map over each entry in Lists */}
           {lists.map(({id, title, description, shared }, index) => (
             // public is a reserved word so need to revisit and rename
